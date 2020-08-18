@@ -20,7 +20,7 @@ In the kit below, you will find everything you need to assemble the project.
 ## How to Build
 
 <div id='instructions'>
-For complete instructions, check out our website at <https://jaycar.com.au/microbit-heart-finder/>
+For complete instructions, check out our website at https://jaycar.com.au/microbit-heart-finder
 </div>
 
 ## How to Use
