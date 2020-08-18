@@ -1,0 +1,370 @@
+﻿<head>
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+    @import url('https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap');
+
+    :target:before {
+      content: '';
+      display: block;
+      height: 160px;
+      margin: -160px 0 0;
+    }
+    .arduinopage {
+      font-size: 14px;
+      padding: 20px;
+      background-color: #ffffff;
+      margin-left: 10px;
+      margin-top: 50px;
+      width: 890px;
+      padding-bottom: 150px;
+      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+      word-wrap: break-word;
+      font-size: 15px;
+      font-weight: 400;
+    }
+    .duinoButton {
+      font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      border-radius: 3px;
+      background-color: #0c254c;
+      white-space: nowrap;
+      text-align: center;
+      padding: 3px 7px;
+      margin: 5px;
+      text-decoration: none !important;
+      color: #ffffff !important;
+    }
+    .github {
+      background: #ff8200;
+    }
+    .download {
+      background: #95c11f;
+    }
+    .arduinopage a {
+      color: #103570;
+      text-decoration: underline;
+    }
+    table {
+      border-collapse: collapse;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    .arduinopage pre {
+      white-space: pre;
+      padding: 30px;
+    }
+    .lpstandard td {
+      border: 1px solid #cccccc;
+    }
+    .hljs {
+      padding: 1em !important;
+    }
+    .majorheading {
+      font-family: 'Red Hat Display', Arial, sans-serif !important;
+      font-size: 30px;
+      line-height: 55px;
+      color: #263a43;
+      font-weight: bold;
+      text-align: center;
+    }
+    .lpheading {
+      font-family: 'Red Hat Display', Arial, sans-serif !important;
+      font-weight: bold;
+      color: #ff8200;
+    }
+    img.arduinoimg {
+      max-width: 790px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      border: 1px solid grey;
+      border-radius: 3px;
+      padding: 4px;
+    }
+    .sourceLine,
+    .sourceCode,
+    .arduinopage span {
+      font-family: 'Roboto Mono', monospace !important;
+    }
+
+    code {
+      font-family: 'Roboto Mono', monospace !important;
+      border-radius: 3px;
+    }
+
+    code:not(.sourceCode) {
+      /*background-color: #F1EBD9;*/
+      padding: 2px 3px;
+    }
+
+    .arduinopage ul,
+    .arduinopage ol {
+      margin-block-start: 0.2em !important;
+      margin-block-end: 0.5em !important;
+      margin-inline-start: 0px !important;
+      margin-inline-end: 0px !important;
+      padding-inline-start: 25px !important;
+      display: block;
+    }
+    .arduinopage ul li {
+      list-style-type: disc;
+    }
+
+    .stl-view canvas {
+      height: 500px;
+      display: block;
+      max-width: 790px;
+      border: 1px solid grey;
+      border-radius: 3px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 4px;
+    }
+    .stl-view {
+      height: 500px;
+      margin-top: 15px;
+      margin-bottom: 50px;
+      color: white;
+    }
+
+    .quick-popup {
+      position: relative;
+    }
+
+    .sourceCode {
+      border: dotted 1px #848484;
+      background-color: #f1ebd9 !important;
+      font-size: 15px !important;
+      margin: 0px auto 20px auto !important;
+      overflow-x: scroll;
+      overflow-y: auto;
+      width: 95%;
+    }
+
+    .arduinopage,
+    table.rednav {
+      -webkit-box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.65);
+      -moz-box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.65);
+      box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.65);
+    }
+
+    .stl-view canvas {
+      border: 1px solid black;
+      border-radius: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 100%;
+      content: none;
+    }
+    .stl-view {
+      height: 500px;
+    }
+
+    p.deprecated + p + p {
+      border: 1px solid red;
+      border-radius: 5px;
+      margin: 0.2em;
+      padding: 1em;
+      background-color: lightcoral;
+      font-style: italic;
+    }
+
+    @media (max-width: 1000px) {
+      .arduinopage {
+        width: 100%;
+        margin-left: 0;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        padding: 8px;
+      }
+
+      .arduinopage img {
+        width: 100%;
+        max-width: 600px;
+      }
+
+      .stl-view {
+        width: 100%;
+      }
+
+      .arduinopage iframe {
+        width: 100%;
+        height: 200px;
+        margin: 20px 0;
+      }
+    }
+  </style>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/atom-one-dark-reasonable.min.css"
+  />
+  <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+  <script defer src="https://threejs.org/build/three.min.js"></script>
+  <script
+    defer
+    src="https://threejs.org/examples/js/loaders/STLLoader.js"
+  ></script>
+  <script
+    defer
+    src="https://threejs.org/examples/js/controls/OrbitControls.js"
+  ></script>
+</head>
+<div class="arduinopage">
+<div><h1 class="majorheading" id="Microbit-Heart-Finder">Microbit Heart Finder</h1><p align="center">
+    <a class="duinoButton download" target="_blank" href="https://github.com/Jaycar-Electronics/Microbit-Heart-Finder/archive/master.zip"> Download Project Resources </a>
+    <a class="duinoButton github" target="_blank" href="https://github.com/Jaycar-Electronics/Microbit-Heart-Finder/tree/master"> View on Github </a>
+</p>
+
+<p>Get started with the Microbit starter pack and this neat little game!</p>
+<p><img alt="hero image" src="https://raw.githubusercontent.com/Jaycar-Electronics/Microbit-Heart-Finder/master/hero.jpg" class="arduinoimg"/></p>
+<h2 class="lpheading" id="What-it-does">What it does</h2>
+<p>Using the Microbit's internal compass, find the correct location for the hidden heart by listening to the "clicks" from the buzzer while you move the microbit around.. when the clicks get fast, you're closer to the target, press the button to reveal a heart! Or a sad face if you get it wrong.</p>
+<p>In the kit below, you will find everything you need to assemble the project.</p>
+<h3 class="lpheading" id="Bill-of-Materials">Bill of Materials</h3>
+<table class="lpstandard">
+<thead>
+<tr>
+<th>Qty</th>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="/p/XC4322" target="_blank">XC4322</a></td>
+<td>BBC Micro:bit Starter Kit</td>
+</tr>
+<tr>
+<td>1</td>
+<td><a href="/p/SB2424" target="_blank">SB2424</a></td>
+<td>Double pack AA Batteries</td>
+</tr>
+</tbody>
+</table>
+<p>and that's all!</p>
+<h2 class="lpheading" id="How-to-Build">How to Build</h2>
+<p>Like most projects, it has two main parts: the hardware and the software. The software will require you to plug in the microbit into the computer using a standard micro usb cable, and using the website <a href="https://makecode.microbit.org/">https://makecode.microbit.org/</a>.</p>
+<p>All of the hardware for this project will be in the <a href="/p/XC4322">XC4322</a> kit.</p>
+<h3 id="hardware" class="lpheading">Hardware</h3>
+<p>Firstly, place the T adaptor from the microbit kit and place it into the breadboard as shown. You want to make sure that the base of the T adapter pins are connected into row <code>30</code> of the breadboard</p>
+<p><img src="images/s1-breadboard.jpg" alt="step 1"></p>
+<p>Then follow up with the tactile button, making sure that the button is connected to pins <code>2</code> and <code>4</code> on the breadboard (up near the other end).</p>
+<p><img src="images/s2-button.jpg" alt="step 2"></p>
+<p>Now you can connect the buzzer to row 15. have it so that the positive connection is in the <code>F</code> column and the shorter unmarked pin is in the <code>E</code> column. You can also put the yellow cap onto the button if you wish, by simply pushing it down onto the square knob on the button.</p>
+<p><img src="images/s3-buzzer.jpg" alt="step 3"></p>
+<p>Next up, connect the following wires, (colours won&#39;t matter, but we&#39;ve kept it consistent with the photos below)</p>
+<table>
+<thead>
+<tr>
+<th>Done?</th>
+<th>Wire Colour</th>
+<th>From</th>
+<th>To</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[ ]</td>
+<td>Green</td>
+<td>Buzzer negative <code>15D</code></td>
+<td>T-adapter GND <code>30A</code></td>
+</tr>
+<tr>
+<td>[ ]</td>
+<td>Orange</td>
+<td>T-adapter GND <code>29A</code></td>
+<td>Negative rail <code>-</code></td>
+</tr>
+<tr>
+<td>[ ]</td>
+<td>White</td>
+<td>T-adpater 3V <code>28A</code></td>
+<td>Button <code>4A</code></td>
+</tr>
+<tr>
+<td>[ ]</td>
+<td>Yellow</td>
+<td>T-adapter P0 <code>30I</code></td>
+<td>Buzzer positive <code>15I</code></td>
+</tr>
+<tr>
+<td>[ ]</td>
+<td>Blue</td>
+<td>T-adapter P1 <code>29I</code></td>
+<td>Button <code>2J</code></td>
+</tr>
+<tr>
+<td>[ ]</td>
+<td><strong>10K Resistor</strong></td>
+<td>Negative rail <code>-</code></td>
+<td>Button <code>2C</code></td>
+</tr>
+</tbody>
+</table>
+<p><img src="docs/images/s4-wires.jpg" alt="step 4"></p>
+<p>If you need to see this a little clearer, we do have a higher res version in the <code>docs/images</code> folder in this project download.</p>
+<p>Once the hardware has been assembled, you can move on to uploading the software to the microbit board as below.</p>
+<h3 class="lpheading" id="software">Software</h3>
+<p>Connect the BBC Microbit to your computer via a standard micro USB cable, and open up the make code website <a href="https://makecode.microbit.org/_bhLUXrVt7REa">https://makecode.microbit.org/_bhLUXrVt7REa</a></p>
+<p>The link above should have the code for you, but we&#39;ll go over the code so we know what we&#39;re looking at.</p>
+<p>Firstly is the <strong>on start</strong> method.</p>
+<p><img src="docs/code/func-onstart.png" alt="on start"></p>
+<p>This function runs when we first turn on the microbit and sets up our microbit game by setting <code>Attempts</code> to zero and <code>Heart Location</code> to a random number between 0 and 359. This will be the location of our heart that we want to find. From here we go on to the <strong>forever</strong> method, which will run continuously until the device is reset or turns off:</p>
+<p><img src="docs/code/func-loop.png" alt="forever method"></p>
+<p>Stepping through the code:</p>
+<ol>
+<li>Set the <code>Difference</code> score, which is a number of how close it is to the heart location.</li>
+<li>We use <code>Difference</code> in a function called <strong>ticker</strong></li>
+<li>Check if a button is pressed on <code>P1</code> which is connected to our physical button via the blue wire.</li>
+<li>If the button is pressed, then:<ol>
+<li>Show the score, which is just <code>round(18 - Difference)</code></li>
+<li>if <code>Difference</code> is &lt; 1, then:<ol>
+<li>call the <strong>youwin</strong> function</li>
+</ol>
+</li>
+<li>else increase <code>Attempts</code> by 1</li>
+<li>if <code>Attempts</code> is 3, then:<ol>
+<li>call the <strong>youlose</strong> function</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p>Finally, we can just define the <strong>youwin</strong>, <strong>youlose</strong>, and <strong>ticker</strong> functions as below. The ticker function actually is what sounds the buzzer by playing a small tone for <code>1/16th</code> of a beat.</p>
+<p><img src="docs/code/func-ticker.png" alt="ticker"></p>
+<p>We also <strong>rest</strong> for <code>1/16th</code> of a beat, multiple times. You can see that we will loop over &quot;<code>Rate</code>&quot; amount of times, which is defined in the function. If you look at the <strong>forever</strong> code above, you can see that we actually call <strong>ticker</strong> funtion with the parameter of <code>Difference</code>.</p>
+<p><img src="docs/code/func-both.png" alt="win"></p>
+<p>The winning and losing code is just showing an icon, playing a tune, and reseting the device. When we reset the device, a new <code>Heart Location</code> will be generated, and <code>Attempts</code> will be set to zero again.</p>
+<h3 class="lpheading" id="programming-the-microbit-and-finishing-the-game">Programming the microbit and finishing the game</h3>
+<p>You can use the download button on the make-code website to download the program and place on your microbit, then disconnect from the computer and connect up the battery.</p>
+<p><img src="docs/images/s5-battery.jpg" alt="step 5"></p>
+<p>You can then press the microbit into the T-adaptor, so that the LEDs are facing the PCB board, and turn it on.</p>
+<p>If this is the first time you&#39;ve ever turned on the microbit, the device will go into <em>&quot;Calibration mode&quot;</em>. We&#39;ve also put the code in so you can calibrate it yourself if you find that the game is acting a bit funny, by pressing both the <code>A</code>+<code>B</code> buttons at the same time:</p>
+<p><img src="docs/code/func-calibrate.png" alt="enter calibration"></p>
+<h3 class="lpheading"  id="calibrating-the-microbit">Calibrating the microbit</h3>
+<p>When the microbit is completely flat ( LEDS are facing <em>UPWARDS</em> ) and in calibration mode, you will find only one LED is lit up. you will have to tilt the microbit around so that the LED moves around the edges of the panel, as well as in to the centre of the LEDs. After a while, you should find that the microbit will go back to <em>game mode</em> and should play better.</p>
+
+
+<h2 class="lpheading" id="How-to-Use">How to Use</h2>
+<p>Turn on the device with the switch on the battery pack, then hold the device close to your chest, pointing downwards.</p>
+<p><img alt="how to hold the game" src="https://raw.githubusercontent.com/Jaycar-Electronics/Microbit-Heart-Finder/master/docs/images/orientation.png" class="arduinoimg"/></p>
+<p>When the game begins, you will beeping corresponding to how close you are to the correct direction.</p>
+<p>If you find the game is behaving a little oddly, chances are the device will need to be calibrated. You can find out how to do this in the instructions at <a href="/microbit-heart-finder/" target="_blank">https://jaycar.com.au/microbit-heart-finder/</a></p>
+<h2 class="lpheading" id="How-it-Works">How it Works</h2>
+<p>The BBC microbit has a little compass module that tells the microbit which way it is pointing. We use that in this game to detect our direction and find where the hidden heart is. You can find more about the compass module here:</p>
+<ul>
+<li><a href="https://makecode.microbit.org/reference/input/compass-heading" target="_blank">https://makecode.microbit.org/reference/input/compass-heading</a></li>
+</ul></div></div>
+<script lang="javascript">
+  hljs.initHighlightingOnLoad();
+  hljs.registerLanguage('plaintext', function(e) {
+    return { disableAutodetect: !0 };
+  });
+</script>

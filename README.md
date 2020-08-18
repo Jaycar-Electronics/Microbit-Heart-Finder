@@ -17,11 +17,11 @@ In the kit below, you will find everything you need to assemble the project.
 | 1   | [XC4322](https://jaycar.com.au/p/XC4322) | BBC Micro:bit Starter Kit |
 | 1   | [SB2424](https://jaycar.com.au/p/SB2424) | Double pack AA Batteries  |
 
-and that's all!
-
 ## How to Build
 
+<div id='instructions'>
 For complete instructions, check out our website at <https://jaycar.com.au/microbit-heart-finder/>
+</div>
 
 ## How to Use
 
