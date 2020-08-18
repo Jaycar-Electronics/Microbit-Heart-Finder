@@ -31,6 +31,8 @@ Turn on the device with the switch on the battery pack, then hold the device clo
 
 When the game begins, you will beeping corresponding to how close you are to the correct direction.
 
+If you find the game is behaving a little oddly, chances are the device will need to be calibrated. You can find out how to do this in the instructions at <https://jaycar.com.au/microbit-heart-finder/>
+
 ## How it Works
 
 The BBC microbit has a little compass module that tells the microbit which way it is pointing. We use that in this game to detect our direction and find where the hidden heart is. You can find more about the compass module here:
